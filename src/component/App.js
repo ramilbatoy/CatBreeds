@@ -82,7 +82,7 @@ class App extends Component {
       tempcatpage = sampledetails;
       this.toggle();
       this.setState({ 
-        catpage: sampledetails
+        catpage: tempcatpage
       });
 
   };
@@ -115,7 +115,7 @@ class App extends Component {
                         {this.state.breeds.map((breed) => <option key={breed.id} value={breed.id}>{breed.name}</option>)}
                     </select>
                   </div>
-                  <div class="listcontainer aligncenter">
+                  <div className="listcontainer aligncenter">
                       {this.state.images.map((image, index) => <div className="col-xs-12 col-sm-4" key={index}><img className="cat-image" alt="" src={image.url}></img>               
                       <div><Button variant="secondary" size="sm" block className="button" onClick={ () => 
                         this.catpagedetail(image.url, image.breeds[0].origin,image.breeds[0].name, image.breeds[0].temperament, image.breeds[0].description)}>                   
@@ -128,8 +128,8 @@ class App extends Component {
                     'mycatpage ' +
                     (this.state.hide ? '' : 'hide')
                   }>
-                   {this.state.catpage.map((catpage) => 
-                   <div className="col-xs-12 col-sm-12" >
+                   {this.state.catpage.map((catpage, index) => 
+                   <div className="col-xs-12 col-sm-12" key={index}>
                      <div><Button variant="success"  size="lg" className="button bback" onClick={this.toggle}> Back </Button> </div>
                      <img className="cat-image" alt="" src={catpage.url}></img>
                       <h2>{catpage.name} </h2>
