@@ -45,7 +45,7 @@ $ npm install -g create-react-app
 $ git clone https://github.com/ramilbatoy/CatBreeds
 
 # Acess the repository folder
-$ cd ./the-cat-breeds-app
+$ cd ./catbreed_api
 
 # Install the project dependencies
 $ npm install
