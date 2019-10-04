@@ -33,5 +33,16 @@
   }
 }
 
-.mycatlist { display: flex; flex-wrap: wrap; }
-.mycatlist > div { padding-top: 15px; padding-bottom: 10px; }
+.mycatlist { }
+
+.listcontainer { padding: 10px 0;  display: flex; flex-wrap: wrap; }
+.listcontainer > div { padding-top: 15px; padding-bottom: 10px; }
+.aligncenter { text-align: center; }
+.centerfix { display: inline-block; margin: 0 auto; }
+.hide { display: none; }
+.bback { margin: 15px 0 15px; }
+.mycatpage h2 {padding: 10px 0; }
+.mycatpage > div, .mycatpage h2 { color: #fff; font-weight: 600; }
+.col-md-10 , .col-md-2{ float: left;}
+.infocatpage { display: flex; flex-wrap: wrap; }
+.infocatpage label { color: #111; font-weight: bold; }
